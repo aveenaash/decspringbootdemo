@@ -1,0 +1,18 @@
+server:
+  port: 8190
+
+user:
+  name: Abinash
+  password : abinash
+  xyz:
+   abc: random value
+   
+notification:
+   text:
+      message: hello text from yaml places
+      from: 2345682630
+   email:
+      message: hello email from chh
+      from: abinash@gmail.com
+   
+   
