@@ -2,18 +2,18 @@ server:
   port: 8190
 
 user:
-  name: Abinash
-  password : abinash
+  name: dev Abinash
+  password : dev abinash
   xyz:
-   abc: random value
+   abc: dev random value
    
 notification:
    text:
-      message: hello text from yaml places
-      from: 2345682630
+      message: hello dev text from yaml places
+      from: 20000000
    email:
-      message: hello email from chh
-      from: abinash@gmail.com
+      message: hello email from chh dev
+      from: dev@gmail.com
       
 spring:
   datasource:
