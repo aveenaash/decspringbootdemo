@@ -26,6 +26,9 @@ public class ClientEntity {
 
 	@Column(name = "secret_key")
 	private String secretKey;
+	
+	@Column(name="is_active")
+	private Boolean active;
 
 	public Long getId() {
 		return id;
@@ -66,5 +69,14 @@ public class ClientEntity {
 	public void setSecretKey(String secretKey) {
 		this.secretKey = secretKey;
 	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
+	}
+	
 
 }

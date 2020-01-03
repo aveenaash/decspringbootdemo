@@ -23,5 +23,24 @@ public class ClientService {
 		
 		clientRepository.save(centity);
 	}
+	
+	public ClientDto getCleint(String name) {
+		ClientEntity ent = clientRepository.findByNameAndActiveTrue(name);
+		return convert(ent);
+	}
+	
+	public ClientDto convert(ClientEntity ce) {
+		ClientDto dto = null;
+		if(ce != null) {
+			dto = new ClientDto();
+			dto.setId(ce.getId());
+			dto.setName(ce.getName());
+			dto.setUrl(ce.getUrl());
+			dto.setKey(ce.getSecretKey());
+			dto.setDomain(ce.getDomain());
+		}
+		
+		return dto;
+	}
 
 }

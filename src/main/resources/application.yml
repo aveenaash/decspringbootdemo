@@ -1,5 +1,5 @@
 server:
-  port: 8190
+  port : 8190
 
 user:
   name: Abinash
@@ -23,7 +23,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        show_sql: false
+        show_sql: true
         format_sql: false
     database-platform: org.hibernate.dialect.MySQLDialect
    

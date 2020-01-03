@@ -6,6 +6,9 @@ public class ClientDto {
 	private String domain;
 	private String url;
 	private String key;
+	private Long id;
+
+	private Boolean active;
 
 	public String getName() {
 		return name;
@@ -37,6 +40,22 @@ public class ClientDto {
 
 	public void setKey(String key) {
 		this.key = key;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public Boolean getActive() {
+		return active;
+	}
+
+	public void setActive(Boolean active) {
+		this.active = active;
 	}
 
 }
